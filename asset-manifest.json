@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Sample_React_Repository_2_Alidon/static/css/main.7eebc124.css",
+    "main.js": "/Sample_React_Repository_2_Alidon/static/js/main.97c05e12.js",
+    "static/js/787.c5ca4160.chunk.js": "/Sample_React_Repository_2_Alidon/static/js/787.c5ca4160.chunk.js",
+    "index.html": "/Sample_React_Repository_2_Alidon/index.html",
+    "main.7eebc124.css.map": "/Sample_React_Repository_2_Alidon/static/css/main.7eebc124.css.map",
+    "main.97c05e12.js.map": "/Sample_React_Repository_2_Alidon/static/js/main.97c05e12.js.map",
+    "787.c5ca4160.chunk.js.map": "/Sample_React_Repository_2_Alidon/static/js/787.c5ca4160.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7eebc124.css",
+    "static/js/main.97c05e12.js"
+  ]
+}
