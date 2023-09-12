@@ -22,7 +22,24 @@ const NavigationBar = () => {
             </Nav.Link>
             <Nav.Link>
                 <Link to="/contact">Contact Us</Link>
-            </Nav.Link>   
+            </Nav.Link>
+            <NavDropdown title="Hooks" id="basic-nav-dropdown">
+              <NavDropdown.Item>
+                <Link to="/classState">
+                   Class Use State
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+              <Link to="/functionalUseState">
+                   Functional Use State
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+              <Link to="/basicFormHandling">
+                   Basic Form Handling
+                </Link>
+              </NavDropdown.Item>
+            </NavDropdown>   
           </Nav>
         </Navbar.Collapse>
       </Container>
