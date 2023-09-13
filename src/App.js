@@ -10,12 +10,31 @@ import BasicFormHandling from "./pages/BasicFormHandling";
 import ClassState from "./pages/ClassState";
 
 import FunctionalState from "./pages/FunctionalState";
+import FormGetter from "./pages/FormGetter";
+
+import Timer from "./pages/Timer";
+import { useContext } from "react";
+import UserContext from "./components/ContextProvider";
+import UseRefTimer from "./pages/UseRefTimer";
+import StopWatch from "./pages/StopWatch";
+
 
 function App() {
+  let data = [
+    {
+      name: "Julius Alidon",
+      age: 20
+    },
+    {
+      name: "Ivana Alawi",
+      age: 19
+    }
+  ];
   return (
     <>
     <BrowserRouter>
     <NavigationBar></NavigationBar>
+    <UserContext.Provider value={data}>
     <Routes>
       <Route path="/" element={<Home></Home>}></Route>
       <Route path="/about" element={<AboutUs/>}></Route>
@@ -25,8 +44,12 @@ function App() {
 
       <Route path="/functionalUseState" element={<FunctionalState/>}></Route>
       <Route path="/basicFormHandling" element={<BasicFormHandling/>}></Route>
+      <Route path="/FormHandlingUsingTwoComponents" element={<FormGetter/>}></Route>
+      <Route path="/Timer" element={<Timer/>}></Route>
+      <Route path="/UseRefTimer" element={<UseRefTimer/>}></Route>
+      <Route path="/UseRefUseStateStopWatch" element={<StopWatch/>}></Route>
     </Routes>
-      
+    </UserContext.Provider>
     </BrowserRouter>
     
       <h1 className="text-warning">Hello World</h1>
